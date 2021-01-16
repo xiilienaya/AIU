@@ -1,0 +1,107 @@
+.tb-top{
+    width:100%;
+    height:500px;
+    background-color: aliceblue;
+    background:url(../img/gonglue/dongbei.jpg) center;
+    position: relative;
+}
+#tb-title{
+    font-size:25px;
+    color:white;
+    position: absolute;
+    top:430px;
+    left:320px;
+    font-weight: bold;
+}
+#tb-touxiang{
+    position: absolute;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    left:200px;
+    top:420px;
+    border:2px dashed white;
+}
+.tb-aha{
+    height:80px;
+    width:350px;
+    /* background-color: aliceblue; */
+    position: absolute;
+    top:400px;
+    right:250px;
+}
+.tb-aha ul{
+    display: flex;
+    justify-content: space-around;
+}
+.tb-aha li{
+    float: left;
+    list-style-type: none;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    border:1px solid white;
+    background-color: rgb(58, 57, 57,0.7);
+}
+.tb-body{
+    width:1200px;
+    height:800px;
+    /* background-color: wheat; */
+    margin: auto;
+    padding:10px 100px;
+    position: relative;
+}
+.tb-ic{
+    /* background-color: pink; */
+    text-align: center;
+    font-weight:bold;
+    color: white;
+}
+.tb-writer{
+    /* background-color: pink; */
+    margin-left:50px;
+    font-size:13px;
+}
+.tb-tag{
+    width:800px;
+    height:100px;
+    margin: auto;
+    background-color: rgb(240, 240, 240);
+}
+.tb-tag ul{
+    display: flex;
+    justify-content: space-around;
+}
+.tb-tag li{
+    text-align: center;
+    float: left;
+    list-style-type: none;
+    width:100px;
+    height:100px;
+    /* background-color: rgb(206, 206, 206); */
+}
+.tb-icon{
+    color: rgb(93, 218, 211);
+    font-size:25px;
+}
+.tb-ic-aha{
+    color:rgb(233, 171, 38);
+}
+.tb-imgList{
+    margin: auto;
+    margin-top:20px;
+    width:800px;
+    height:500px;
+    background-color: pink;
+    margin-bottom:20px;
+}
+.tb-imglist-style{
+    width:800px;
+    height:500px;
+}
+.tb-text{
+    margin: auto;
+    line-height:30px;
+    width:800px;
+    margin-bottom: 20px;
+}
