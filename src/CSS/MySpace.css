@@ -1,0 +1,188 @@
+.TravelNotes p{
+    padding: 0;
+    margin: 0
+}
+.my-top{
+    width:100%;
+    height:250px;
+    background-color: aliceblue;
+    background: url(../img/back.jpg) no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    overflow: hidden;
+}
+.my-tx{
+    position: absolute;
+    top:50px;
+    left:300px;
+    width:120px;
+    height:120px;
+    border-radius:100%;
+    border:4px dashed white;
+}
+.my-name{
+    position: absolute;
+    top:70px;
+    left:450px;
+    font-size:25px;
+    color: rgb(70, 70, 70);
+}
+.my-signature{
+    display: inline-block;
+    max-width:400px;
+    /* background-color: pink; */
+    position: absolute;
+    top:120px;
+    left:450px;
+}
+.guanzhuBtn{
+    background-color: rgb(248, 89, 78);
+    color: white;
+    position: absolute;
+    left:450px;
+    top:170px;
+    width:80px;
+    height:40px;
+    border-radius:5px;
+    border: 1px solid white;
+}
+.my-fs{
+    width:150px;
+    height:60px;
+    /* background-color: pink; */
+    position: absolute;
+    right:400px;
+    top:80px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.my-fs div{
+    width:75px;
+}
+.fs{
+    font-size:25px;
+    height:25px;
+    color: rgb(38, 184, 159);
+}
+.my-tab{
+    /* background-color: rgb(255, 255, 255,0.5); */
+    
+}
+.mytabBox{
+    width:1000px;
+    /* margin: auto; */
+    /* background-color: pink; */
+    min-height:500px;
+    overflow: hidden;
+}
+.my-none{
+    font-size:30px;
+    text-align: center;
+    /* background-color: aliceblue; */
+    margin-top:100px;
+}
+/* 游记列表 */
+.my-noteList li{
+    position: relative;
+    list-style-type: none;
+    width:1000px;
+    height:400px;
+    background-color: white;
+    border:2px dashed rgb(201, 201, 201);
+    border-radius:10px;
+    padding:10px;
+    margin-bottom:20px;
+}
+.my-noteTitle{
+    font-size:20px;
+    font-weight: bold;
+}
+.my-noteImg{
+    display: block;
+    width:980px;
+    height:300px;
+    margin: auto;
+}
+.my-noteInfo{
+    position: absolute;
+    bottom:5px;
+}
+.my-notelike{
+    position: absolute;
+    right:20px;
+    bottom:4px;
+}
+.my-notecollect{
+    position: absolute;
+    right:60px;
+    bottom:4px;
+}
+.delete{
+    position: absolute;
+    right:20px;
+}
+/* 收藏 */
+.my-cl-tx{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:10px;
+}
+.my-cl-Img{
+    margin-top:5px;
+    width:980px;
+    height:300px;
+}
+.my-cancle-col{
+    width:90px;
+    height:30px;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+/* 关注 */
+.gz-list{
+    padding-left:10px;
+}
+.gz-list li{
+    position: relative;
+    padding: 5px;
+    padding-left:10px;
+    list-style-type: none;
+    width:200px;
+    height:70px;
+    /* background-color: orange; */
+    margin:20px;
+    float: left;
+    border:1px solid rgb(212, 212, 212);
+    box-shadow:1px 1px 2px rgb(201, 199, 199);
+}
+.gz-tx{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-top:5px;
+}
+.gz-name{
+    font-size:18px;
+    margin-left: 10px;
+    position: absolute;
+    top:10px;
+}
+.gz-gz{
+    position: absolute;
+    top:40px;
+    left:70px;
+    color:rgb(177, 177, 177);
+}
+.gz-fs{
+    position: absolute;
+    top:40px;
+    left:130px;
+    color:rgb(177, 177, 177);
+}
+/* 底部 */
+.my-bottom{
+    height:100px;
+}

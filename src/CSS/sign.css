@@ -58,13 +58,13 @@
     margin-top:100px;
     border-radius:20px;
     padding-left:100px;
-    padding-top:50px;
+    padding-top:20px;
 }
 #backSign{
     position: relative;
     width:100px;
     left:320px;
-    top:55px;
+    top:20px;
 }
 #backSign:hover{
     text-decoration: underline;

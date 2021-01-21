@@ -22,6 +22,7 @@ export default class App extends Component {
     componentDidMount(){
 
     }
+    // 登录验证
     checkSignIn=()=>{
         let username=this.username.state.value;
         let pwd = this.pwd.state.value;
@@ -36,6 +37,7 @@ export default class App extends Component {
             alert("手机号错误");
         }
     }
+    // 获取验证码
     getCode=()=>{
         let tel=this.zcTel.state.value;
         let pwd = this.zcPwd.state.value;
@@ -67,6 +69,16 @@ export default class App extends Component {
         
     }
     zhuce=()=>{
+        //验证用户名是否为空
+        let tel=this.zcTel.state.value;
+        let pwd = this.zcPwd.state.value;
+        let name = this.zcName.state.value;
+        console.log(name);
+        if(name ==undefined || name ==undefined || pwd == undefined){
+            alert("请您填写完整注册信息哦~")
+        }else{
+            //核验验证码是否正确
+        }
         //注册成功跳转登录页面
     }
     gotoZC=()=>{
@@ -99,6 +111,8 @@ export default class App extends Component {
              </div> 
              {/* //注册框 */}
              <div id='zhuce-box' style={{display:this.state.showZCBox}}>
+                用户名<Input className='sign-inp' id='zhuce-name' ref={(inp)=>{this.zcName=inp}} style={{width:'200px',marginLeft:'22px',marginTop:'40px'}}/>
+                <br/>
                 手机号码<Input className='sign-inp' id='zhuce-tel' ref={(inp)=>{this.zcTel=inp}} style={{width:'200px',marginLeft:'10px',marginTop:'40px'}}/>
                 <br/>
                 登录密码<Input type='password' className='sign-inp' id='zhuce-pwd' ref={(inp)=>{this.zcPwd=inp}} style={{width:'200px',marginLeft:'10px',marginTop:'40px'}}/>

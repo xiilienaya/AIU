@@ -1,0 +1,23 @@
+.pwd-sp{
+    display: inline-block;
+    width:70px;
+    /* background-color: plum; */
+}
+.pwd-ul li{
+    list-style-type: none;
+    width:800px;
+    height:40px;
+    line-height:40px;
+    /* background-color: aliceblue; */
+    margin-top:10px;
+}
+.pwd-sp2{
+    margin-left:10px;
+    font-size:10px;
+    color:rgb(160, 160, 160);
+}
+.pwd-btn{
+    width:100px;
+    margin-top:20px;
+    margin-left:150px;
+}

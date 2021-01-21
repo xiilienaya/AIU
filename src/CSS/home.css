@@ -10,7 +10,7 @@
 #h-top{
     width:1200px;
     height:80px;
-    background-color: pink;
+    /* background-color: rgb(182, 222, 235); */
     margin: auto;
 }
 #h-tab{
@@ -219,4 +219,8 @@
 }
 .h-bottom{
     height:200px;
+}
+
+#home-my{
+    float:right;
 }

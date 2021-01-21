@@ -99,9 +99,99 @@
     width:800px;
     height:500px;
 }
-.tb-text{
+.tb-content{
     margin: auto;
+    /* background-color: pink; */
     line-height:30px;
     width:800px;
     margin-bottom: 20px;
+}
+.yitiao{
+    height:3px;
+    width:800px;
+    margin:auto;
+    background-color: grey;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.tb-comment{
+    position: relative;
+    width:800px;
+    height:300px;
+    margin:auto;
+    background-color: rgb(243, 242, 242);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+}
+#tb-cm-head{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:30px;
+}
+.tb-cm-text{
+    width:500px;
+    position: absolute;
+    left:150px;
+    top:80px;
+}
+#tb-cm-name{
+    position: absolute;
+    top:160px;
+    width:120px;
+    left:13px;
+    text-align: center;
+    /* background-color:hotpink ; */
+}
+#tb-pubcm{
+    position: absolute;
+    right:100px;
+    bottom:30px;
+    background-color: orange;
+    color: white;
+}
+.tb-cm-List{
+    max-height:100px;
+    width:800px;
+    margin: auto;
+    /* background-color:lavender;  */
+}
+.tb-cm-List li{
+    position: relative;
+    list-style-type: none;
+    min-height:80px;
+    border-bottom:1px solid rgb(214, 214, 214);
+}
+.cmlist-head{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-top:10px;
+}
+.cmlist-name{
+    position: absolute;
+    /* background-color: pink; */
+    top:15px;
+    left:60px;
+    color: rgb(43, 100, 223);
+}
+.cmlist-text{
+    position: absolute;
+    left:118px;
+    top:19px;
+    width:600px;
+    min-height:15px;
+    line-height:15px;
+    /* background-color: pink; */
+}
+.cmlist-time{
+    color: rgb(139, 139, 139);
+    position: absolute;
+    right:10px;
+}
+
+.tb-bottom{
+    min-height:200px;
 }

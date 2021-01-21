@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "antd": "^4.10.0",
     "react": "^16.14.0",
     "react-dom": "^16.10.2",
+    "react-image-crop": "^8.6.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.2.0",
     "react-slick": "^0.27.14",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wangeditor": "^4.6.3"
   },
   "scripts": {
     "start": "react-scripts start",

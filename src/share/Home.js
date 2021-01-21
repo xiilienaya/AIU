@@ -4,6 +4,7 @@ import {HashRouter as Router,Route,Link} from 'react-router-dom';
 import 'antd/dist/antd.css';
 import '../CSS/home.css';
 import Title from './Title';
+import Item from 'antd/lib/list/Item';
 
 const contentStyle = {
     height: '360px',
@@ -11,18 +12,26 @@ const contentStyle = {
     lineHeight: '160px',
     textAlign: 'center',
     background: '',
-  };
+};
+
+const city=['全部','成都','上海','重庆','西安','北京','杭州','长沙','三亚','青岛'];
 
 export default class App extends Component {
     constructor(){
         super();
         this.state={
-            
+            city:"全部"
         }
     }
     componentDidMount(){
-        console.log(this.props.history);
+        // console.log(this.props.history);
         // console.log(this.props.history.location.pathname);
+    }
+    selectCity=(item)=>{
+        // console.log(item)
+        this.setState({
+            city:item
+        })
     }
   render() {
       return (
@@ -32,7 +41,7 @@ export default class App extends Component {
             {/* 轮播图 */}
             <div id='lunbo'>
                 <div className="lun">
-                    <Carousel autoplay>
+                    <Carousel autoplay dots={false}>
                         <div>
                             <div style={contentStyle}>
                                 <div>
@@ -40,7 +49,6 @@ export default class App extends Component {
                                     <div className='worksInfo'>
                                         <span id='works-username'>嘻嘻哈哈</span>
                                         <p>旅游文章的标题</p>
-                                        
                                         <img style={{width:'60px',height:'60px',borderRadius:"50%"}} src={require('../img/头像1.jpg')}/>
                                     </div>
                                 </div>
@@ -92,10 +100,19 @@ export default class App extends Component {
                 <div className='yj-des'>
                     <ul className='yj-des-list'>
                         <li id='yj-mudidi'>目的地</li>
-                        <li>全部</li>
-                        <li>成都</li>
-                        <li>上海</li>
-                        <li>重庆</li>
+                        {
+                            city.map((item,index)=>{
+                                if(item==this.state.city){
+                                    return <li key={index} style={{color:"rgb(66, 198, 238)",fontWeight:"bold"}} onClick={()=>{this.selectCity(item)}}>
+                                    {item}
+                                    </li>
+                                }else{
+                                    return <li key={index} onClick={()=>{this.selectCity(item)}}>
+                                        {item}
+                                    </li>
+                                }
+                            })
+                        }
                     </ul>
                 </div>
                 <div className='yj-List'>
@@ -119,7 +136,7 @@ export default class App extends Component {
                         <li>
                             <img id='yj-list-tx' src={require('../img/头像1.jpg')} />
                             <p id='yj-list-title'>
-                                <Link to='/travelbook'>南方姑娘的心愿：想和你一起去东北看雪啊</Link>
+                                <Link target="_blank" to='/travelbook?yjid=1'>南方姑娘的心愿：想和你一起去东北看雪啊</Link>
                             </p>
                             <br/>
                             <div id='yj-list-info'>
@@ -136,7 +153,7 @@ export default class App extends Component {
                         </li>
                     </ul>
                     <div className='h-bottom'>
-
+                        
                     </div>
                 </div>
             </div>

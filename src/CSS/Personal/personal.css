@@ -1,0 +1,70 @@
+.p-myset{
+    width:1200px;
+    min-height:600px;
+    /* background-color: pink; */
+    margin: auto;
+    margin-top:10px;
+}
+.p-bottom{
+    height:100px;
+}
+.p-myinfo{
+    font-size:20px;
+}
+.p-infoBox{
+    position: relative;
+    /* background-color: pink; */
+    width:800px;
+    height:400px;
+}
+.p-tx{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+.p-name{
+    font-size:18px;
+    margin-left:10px;
+}
+.p-ul li{
+    list-style-type: none;
+    width:400px;
+    height:40px;
+    line-height:40px;
+    /* background-color: aliceblue; */
+    margin-top:10px;
+}
+.p-inp{
+    width:300px;
+}
+.p-sp{
+    margin-right:15px;
+}
+.p-p{
+    position: absolute;
+    top: 250px;
+    color:rgb(206, 206, 206);
+}
+.p-submit{
+    position: absolute;
+    top:350px;
+    left:100px;
+    width:100px;
+}
+.p-changeTx{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(24, 24, 24,0.7);
+}
+.my-txBox{
+    width:600px;
+    height:500px;
+    background-color: white;
+    margin:auto;
+    margin-top:100px;
+    border:5px solid rgb(20, 20, 20,0.7);
+    padding:10px;
+}
